@@ -1,36 +1,104 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Pozstar Dashboard
 
-## Getting Started
+Pozstar é um painel moderno e responsivo desenvolvido com **Next.js 13+**, **React**, **Tailwind CSS**, **shadcn/ui**, **lucide-react** e **TypeScript**. Este projeto foi criado para fornecer uma interface de usuário intuitiva e eficiente para gerenciar ordens de serviço, clientes, finanças e relatórios.
 
-First, run the development server:
+## Funcionalidades Principais
+
+- **Dashboard Interativo**: Visualize métricas importantes como ordens abertas, ordens finalizadas, receita total e clientes ativos.
+- **Ações Rápidas**: Crie novas ordens de serviço, adicione clientes e acesse relatórios financeiros com apenas um clique.
+- **Atividades Recentes**: Acompanhe as últimas ações realizadas no sistema.
+- **Tema Dinâmico**: Alterne entre os modos claro, escuro e sistema.
+- **Design Responsivo**: Totalmente otimizado para dispositivos móveis e desktops.
+
+## Tecnologias Utilizadas
+
+- **Next.js 13+**: Framework React para renderização do lado do servidor e geração de sites estáticos.
+- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
+- **Tailwind CSS**: Framework CSS utilitário para estilização rápida e consistente.
+- **shadcn/ui**: Componentes de interface de usuário acessíveis e personalizáveis.
+- **lucide-react**: Ícones modernos e flexíveis para React.
+- **TypeScript**: Superset do JavaScript que adiciona tipagem estática ao código.
+
+## Como Começar
+
+### Pré-requisitos
+
+Certifique-se de ter o **Node.js** instalado em sua máquina. Recomendamos a versão LTS mais recente.
+
+### Instalação
+
+1. Clone o repositório:
+
+   ```bash
+   git clone https://github.com/Lios321/pozstar.git
+   ```
+
+2. Navegue até o diretório do projeto:
+
+   ```bash
+   cd pozstar
+   ```
+
+3. Instale as dependências:
+   ```bash
+   npm install
+   # ou
+   yarn install
+   # ou
+   pnpm install
+   ```
+
+### Executando o Servidor de Desenvolvimento
+
+Inicie o servidor de desenvolvimento:
 
 ```bash
 npm run dev
-# or
+# ou
 yarn dev
-# or
+# ou
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra [http://localhost:3000](http://localhost:3000) no navegador para visualizar o projeto.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build para Produção
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Para gerar uma versão otimizada para produção:
 
-## Learn More
+```bash
+npm run build
+# ou
+yarn build
+# ou
+pnpm build
+```
 
-To learn more about Next.js, take a look at the following resources:
+O diretório `out/` conterá os arquivos prontos para deploy.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contribuindo
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Contribuições são bem-vindas! Siga os passos abaixo para contribuir:
 
-## Deploy on Vercel
+1. Faça um fork do repositório.
+2. Crie uma branch para sua feature ou correção:
+   ```bash
+   git checkout -b minha-feature
+   ```
+3. Commit suas mudanças:
+   ```bash
+   git commit -m "Descrição da minha feature"
+   ```
+4. Envie para o repositório remoto:
+   ```bash
+   git push origin minha-feature
+   ```
+5. Abra um Pull Request.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Licença
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+---
+
+Feito com ❤️ por Pozstar Electronics.
