@@ -2,101 +2,90 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div className="min-h-screen font-sans flex flex-col bg-gradient-to-tr from-blue-200 via-white to-blue-400 dark:from-gray-900 dark:via-gray-800 dark:to-blue-900 relative overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-0 left-0 w-80 h-80 bg-blue-300 opacity-30 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-700 opacity-20 rounded-full blur-3xl animate-pulse" />
+      </div>
+      <header className="bg-blue-700 text-white py-6 px-8 flex items-center justify-between shadow-md z-10">
+        <div className="flex items-center gap-3">
+          <Image src="/globe.svg" alt="Pozstar logo" width={48} height={48} />
+          <span className="text-3xl font-extrabold tracking-tight drop-shadow">
+            Pozstar
+          </span>
+        </div>
+      </header>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
+      <main className="flex-1 flex flex-col items-center justify-center px-4 z-10">
+        <div className="max-w-xl w-full text-center mb-14">
+          <h1 className="text-4xl sm:text-5xl font-extrabold text-blue-700 dark:text-blue-300 mb-4 drop-shadow-lg">
+            Bem-vindo!
+          </h1>
+          <p className="text-xl text-gray-700 dark:text-gray-200 mb-6">
+            O sistema Pozstar facilita o controle financeiro, ordens de serviço
+            e clientes da sua empresa.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 w-full max-w-3xl">
           <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#financeiro"
+            className="group bg-white dark:bg-gray-800 rounded-2xl shadow-2xl p-10 flex flex-col items-center hover:-translate-y-2 hover:shadow-blue-400 dark:hover:shadow-blue-900 transition-all duration-300 cursor-pointer border border-transparent hover:border-blue-400 dark:hover:border-blue-500"
           >
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              src="/file.svg"
+              alt="Financeiro"
+              width={64}
+              height={64}
+              className="group-hover:scale-110 transition-transform duration-300"
             />
-            Deploy now
+            <span className="mt-6 text-xl font-bold text-blue-700 dark:text-blue-300">
+              Financeiro
+            </span>
+            <span className="text-base text-gray-500 mt-2">
+              Receitas, despesas e saldo em tempo real
+            </span>
           </a>
           <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#ordens"
+            className="group bg-white dark:bg-gray-800 rounded-2xl shadow-2xl p-10 flex flex-col items-center hover:-translate-y-2 hover:shadow-blue-400 dark:hover:shadow-blue-900 transition-all duration-300 cursor-pointer border border-transparent hover:border-blue-400 dark:hover:border-blue-500"
           >
-            Read our docs
+            <Image
+              src="/window.svg"
+              alt="Ordens de Serviço"
+              width={64}
+              height={64}
+              className="group-hover:scale-110 transition-transform duration-300"
+            />
+            <span className="mt-6 text-xl font-bold text-blue-700 dark:text-blue-300">
+              Ordens de Serviço
+            </span>
+            <span className="text-base text-gray-500 mt-2">
+              Acompanhe e gerencie ordens facilmente
+            </span>
+          </a>
+          <a
+            href="#clientes"
+            className="group bg-white dark:bg-gray-800 rounded-2xl shadow-2xl p-10 flex flex-col items-center hover:-translate-y-2 hover:shadow-blue-400 dark:hover:shadow-blue-900 transition-all duration-300 cursor-pointer border border-transparent hover:border-blue-400 dark:hover:border-blue-500"
+          >
+            <Image
+              src="/globe.svg"
+              alt="Clientes"
+              width={64}
+              height={64}
+              className="group-hover:scale-110 transition-transform duration-300"
+            />
+            <span className="mt-6 text-xl font-bold text-blue-700 dark:text-blue-300">
+              Clientes
+            </span>
+            <span className="text-base text-gray-500 mt-2">
+              Gestão completa da sua base de clientes
+            </span>
           </a>
         </div>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+
+      <footer className="bg-blue-700 text-white py-4 px-8 text-center text-sm mt-auto z-10">
+        Pozstar &copy; 2025 &mdash; Sistema Empresarial
       </footer>
     </div>
   );
